@@ -14,9 +14,9 @@ const commentRoute = require("./routes/comments");
 
 
 //middlewares
-app.use(cors({origin:"*",
+app.use(cors({origin:"https://alpha55blogs.netlify.app",
               headers: {
-                "Access-Control-Allow-Origin" : "https://alpha55blogs.netlify.app/",
+                "Access-Control-Allow-Origin" : "https://alpha55blogs.netlify.app",
                 "Access-Control-Allow-Credentials" : true
               },
               credentials: true}));
