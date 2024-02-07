@@ -17,7 +17,8 @@ const commentRoute = require("./routes/comments");
 app.use(cors({origin:"https://alpha55blogs.netlify.app",
               headers: {
                 "Access-Control-Allow-Origin" : "https://alpha55blogs.netlify.app",
-                "Access-Control-Allow-Credentials" : true
+                "Access-Control-Allow-Credentials" : true,
+                "Access-Control-Allow-Headers": content-type
               },
               credentials: true}));
 app.use("/images",express.static(path.join(__dirname,"/images")));
