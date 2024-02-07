@@ -19,12 +19,12 @@ export default function Navbar() {
     const {user}= useContext(UserContext);
 
   return (
-    <div className="flex gap-4 md:gap-0 md:flex-row items-center bg-black text-white justify-between px-6 md:px-[200px] py-4">
+    <div className="flex gap-3 md:gap-24 items-center bg-black text-white px-6 md:px-[200px] py-4">
                       {/* Left */}
-      <p className="text-xl md:text-2xl font-extrabold hover:opacity-85"><Link to="/">Alpha <span className="text-red-400">Blogs</span></Link></p>
+      <p className="text-lg md:text-2xl font-extrabold hover:opacity-85"><Link to="/">Alpha <span className="text-red-400">Blogs</span></Link></p>
                        {/* Center */}
       <div className="flex justify-center items-center space-x-0">
-        <div className="w-[250px] flex items-center h-full rounded-3xl md:w-[400px] border-2 border-solid
+        <div className="w-[200px] flex items-center h-full rounded-3xl md:w-[400px] border-2 border-solid
         border-gray-600 bg-[#121212]">
         <input type="text" placeholder="Search a post"
         onChange={(e)=>setPrompt(e.target.value)}
