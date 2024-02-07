@@ -14,7 +14,7 @@ const commentRoute = require("./routes/comments");
 
 
 //middlewares
-app.use(cors({origin:"http://localhost:5173",credentials:true}));
+app.use(cors({origin:"*",credentials:true}));
 app.use("/images",express.static(path.join(__dirname,"/images")));
 app.use(express.json());
 app.use(cookieParser());
