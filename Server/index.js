@@ -10,7 +10,7 @@ const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const commentRoute = require("./routes/comments");
-port = 5000;
+
 
 
 //middlewares
@@ -48,6 +48,6 @@ app.post("/api/upload",upload.single("file"),(req,res)=>{
 })
 
 
-app.listen(port,()=> {
+app.listen(process.env.PORT,()=> {
       console.log(`Server running on port ${port}`);
 });
