@@ -14,7 +14,7 @@ const commentRoute = require("./routes/comments");
 
 
 //middlewares
-app.use(cors({origin:"https://alpha55blogs.netlify.app/",credentials:true}));
+app.use(cors({origin:"*",credentials:true}));
 app.use("/images",express.static(path.join(__dirname,"/images")));
 app.use(express.json());
 app.use(cookieParser());
